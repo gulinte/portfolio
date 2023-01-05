@@ -1,0 +1,167 @@
+body {
+    background: #F5E8E4 ;
+    font-family: 'Anybody';
+    color: #411530 ;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 76px ;
+  background: #F5E8E4 ;
+  box-shadow: 0 5px 15px #411530 ;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0 ;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  font-size: 16px ;
+  font-weight: 500;
+  color: #411530 ;
+  transition: 0.28s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    text-decoration: none;
+  color: #AC7088 ;
+}
+
+.out {
+      text-decoration: none;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+      text-decoration: none;
+  content: "";
+  width: 55%;
+  height: 2px;
+  background: #AC7088 ;
+  position: absolute;
+  bottom: -4px;
+  left:20px;
+
+}
+.blog-container{
+padding-top: 6%;
+margin: auto;
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.blog-box{
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.22);
+
+}
+.blog-img{
+  width: 100%;
+
+  display: flex;
+  overflow: hidden;
+  border-radius: 5%;
+  align-items: center;
+}
+.blog-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.blog-text strong{
+  font-size: 1.03rem;
+  display: flex;
+  justify-content: center;
+  color: #411530;
+  margin: 10px;
+}
+.widthandheight{
+  object-fit: cover;
+  object-position: center;
+  width: 50px;
+  height: 20px;
+}
+.blog-time{
+align-items: center;
+justify-content: center;
+display: flex;
+}
+.publishing{
+  font-weight: 500;
+  color: #AC7088;
+}
+
+h1 {
+  color: #AC7088;
+  width: 100%;
+  font-size: 200px;
+  font-weight: 900;
+  text-align: center;
+
+  position: fixed;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 1500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4.5%;
+}
+.me{
+  font-size: 2.7rem;
+}
+.me2{
+  font-size: 2.3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#contact{
+padding-top: 10%;
+text-align: center;
+}
+.icon {
+  padding: 3%;
+  color: #411530;
+}
+
+.icon:hover{
+  color: #AC7088;
+}
